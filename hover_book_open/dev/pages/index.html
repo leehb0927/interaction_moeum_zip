@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <h2>hover하면 책펼쳐지는</h2>
+            <div class="book-wrap">
+                <div class="page page-front"></div>
+                <div class="page page2"></div>
+                <div class="page page3"></div>
+                <div class="page page4"></div>
+                <div class="page page5"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            /* var book = document.querySelector('.book-wrap')
+            var pageOne = document.querySelector('.page-front');
+            var pageTwo = document.querySelector('.page2');
+            var pageThree = document.querySelector('.page3');
+            var pageFour = document.querySelector('.page4');
+            var pageFive = document.querySelector('.page5');
+
+            book.addEventListener('mouseenter', () => {
+                pageOne.style.transform = 'rotateX(-45deg)';
+                pageTwo.style.transform = 'rotateX(-35deg)';
+                pageThree.style.transform = 'rotateX(-25deg)';
+                pageFour.style.transform = 'rotateX(-15deg)';
+                pageFive.style.transform = 'rotateX(-5deg)';
+            })
+
+            book.addEventListener('mouseleave', () => {
+                pageOne.style.transform = 'rotateX(0)';
+                pageTwo.style.transform = 'rotateX(0)';
+                pageThree.style.transform = 'rotateX(0)';
+                pageFour.style.transform = 'rotateX(0)';
+                pageFive.style.transform = 'rotateX(0)';
+            }) */
+
+            //코드 반복문 사용
+            /* var book = document.querySelector('.book-wrap');
+            var pages = document.querySelectorAll('.book-wrap > div');
+
+            book.addEventListener('mouseenter', () => {
+                pages.forEach((page, index) => {
+                    page.style.transform = `rotateX(${-(45 - index * 10)}deg)`;
+                });
+            });
+
+            book.addEventListener('mouseleave', () => {
+                pages.forEach((page) => {
+                    page.style.transform = 'rotateX(0)';
+                });
+            }); */
+
+            //애니메이션
+
+            var book = document.querySelector('.book-wrap');
+            var pages = document.querySelectorAll('.book-wrap .page');
+
+            var animations = [
+                {className: "cardOpen1", duration: "0.2s", reverse: "cardClose1"}, //index 0
+                {className: "cardOpen2", duration: "0.3s", reverse: "cardClose2"}, //index 1
+                {className: "cardOpen3", duration: "0.3s", reverse: "cardClose3"}, //index 2
+                {className: "cardOpen4", duration: "0.3s", reverse: "cardClose4"}, //index 3
+                {className: "cardOpen5", duration: "0.3s", reverse: "cardClose5"}, //index 4
+            ];
+
+            book.addEventListener("mouseenter", () => {
+                pages.forEach((page, index) => {
+                    const animation = animations[index];
+
+                    page.style.animation = `${animation.className} ${animation.duration} forwards ease-out`;
+
+                });
+            });
+            book.addEventListener("mouseleave", () => {
+                pages.forEach((page, index) => {
+                    const animation = animations[index];
+
+                    page.style.animation = `${animation.reverse} .6s forwards`
+                });
+            });
+        }
+
+    </script>
+</body>
+</html>

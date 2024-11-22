@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* variables */
+/* colors */
+/* 임의의 컬러 */
+/* mixins */
+/* 애니메이션 */
+@keyframes cardOpen1 {
+  0% {
+    transform: rotateX(0);
+  }
+  80% {
+    transform: rotateX(-49deg);
+  }
+  100% {
+    transform: rotateX(-45deg);
+  }
+}
+@keyframes cardOpen2 {
+  0% {
+    transform: rotateX(0);
+  }
+  80% {
+    transform: rotateX(-39deg);
+  }
+  100% {
+    transform: rotateX(-35deg);
+  }
+}
+@keyframes cardOpen3 {
+  0% {
+    transform: rotateX(0);
+  }
+  80% {
+    transform: rotateX(-29deg);
+  }
+  100% {
+    transform: rotateX(-25deg);
+  }
+}
+@keyframes cardOpen4 {
+  0% {
+    transform: rotateX(0);
+  }
+  80% {
+    transform: rotateX(-19deg);
+  }
+  100% {
+    transform: rotateX(-15deg);
+  }
+}
+@keyframes cardOpen5 {
+  0% {
+    transform: rotateX(0);
+  }
+  80% {
+    transform: rotateX(-9deg);
+  }
+  100% {
+    transform: rotateX(-5deg);
+  }
+}
+@keyframes cardClose1 {
+  0% {
+    transform: rotateX(-45deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+@keyframes cardClose2 {
+  0% {
+    transform: rotateX(-35deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+@keyframes cardClose3 {
+  0% {
+    transform: rotateX(-25deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+@keyframes cardClose4 {
+  0% {
+    transform: rotateX(-15deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+@keyframes cardClose5 {
+  0% {
+    transform: rotateX(-5deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}

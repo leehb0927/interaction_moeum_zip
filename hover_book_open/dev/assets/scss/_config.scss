@@ -1,0 +1,172 @@
+/* variables */
+
+/* colors */
+//기본 컬러
+$color-white: #fff;
+$color-white-01: rgba($color-white, .1);
+
+$color-gray: #eee;/* 임의의 컬러 */
+
+$color-black: #000;
+$color-black-01: rgba($color-black, .1);
+
+/* mixins */
+//vs
+@mixin vs {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+@mixin vs-b {
+    display: block;
+    content: '';
+}
+
+@mixin vs-ib {
+    display: inline-block;
+    content: '';
+}
+
+//background
+@mixin background-cover {
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+@mixin background-contain {
+    background: {
+        size: contain;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+//flex
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 애니메이션 */
+//카드 오픈 애니메이션
+@keyframes cardOpen1 {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        transform: rotateX(-49deg);
+    }
+    100% {
+        transform: rotateX(-45deg);
+    }
+}
+
+@keyframes cardOpen2 {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        transform: rotateX(-39deg);
+    }
+    100% {
+        transform: rotateX(-35deg);
+    }
+}
+
+@keyframes cardOpen3 {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        transform: rotateX(-29deg);
+    }
+    100% {
+        transform: rotateX(-25deg);
+    }
+}
+@keyframes cardOpen4 {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        transform: rotateX(-19deg);
+    }
+    100% {
+        transform: rotateX(-15deg);
+    }
+}
+@keyframes cardOpen5 {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        transform: rotateX(-9deg);
+    }
+    100% {
+        transform: rotateX(-5deg);
+    }
+}
+
+//카드 클로즈 애니메이션
+@keyframes cardClose1 {
+    0% {
+        transform: rotateX(-45deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes cardClose2 {
+    0% {
+        transform: rotateX(-35deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes cardClose3 {
+    0% {
+        transform: rotateX(-25deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes cardClose4 {
+    0% {
+        transform: rotateX(-15deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes cardClose5 {
+    0% {
+        transform: rotateX(-5deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
