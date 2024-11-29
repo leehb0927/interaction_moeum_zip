@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* variables */
+@font-face {
+  font-family: "__haus_headline_78a302";
+  src: url(../fonts/e269debde48a755f.p.ttf) format(truetype);
+  font-display: swap;
+  font-weight: 100 900;
+}
+/* colors */
+/* 임의의 컬러 */
+/* mixins */

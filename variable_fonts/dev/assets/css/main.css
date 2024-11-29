@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* variables */
+@font-face {
+  font-family: "__haus_headline_78a302";
+  src: url(../fonts/e269debde48a755f.p.ttf) format(truetype);
+  font-display: swap;
+  font-weight: 100 900;
+}
+/* colors */
+/* 임의의 컬러 */
+/* mixins */
+.book-wrap span {
+  font-family: "__haus_headline_78a302";
+  font-size: 13.2vw;
+  font-feature-settings: "ss04";
+  --kerning: -0.019982006899833454em;
+  --char-index: 1;
+  font-feature-settings: "ss01";
+}
+
+/* fontVariationSettings fontFeatureSettings를 활용해서 폰트를 변경하는 것 같음
+사이트 참고 : https://madeinhaus.com/
+*/
